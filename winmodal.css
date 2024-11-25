@@ -1,0 +1,228 @@
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+    float: left;
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Ширина модального окна */
+    float: left;
+}
+
+.rightside {
+    float: right;
+    
+    position:relative;
+    top: -190px;
+}
+.photo1 {
+    display: block;
+    margin-left: auto;
+}
+.imgtop {
+    width: 70px;
+}
+
+.button_main {
+    position:relative;
+    left: 1500px;
+    top: -140px;
+}
+
+.button_homework {
+    position: relative;
+    left: 1500px;
+    top: -140px;
+}
+.button_uslugi {
+    position: relative;
+    left: 1500px;
+    top: -140px;
+}
+.button_main {
+    position: relative;
+    left: 1500px;
+    top: -140px;
+}
+
+.toptable {
+    background-color: rgb(236, 252, 246);
+}
+
+.top2 {
+    margin-bottom: -10px;
+}
+
+.top {
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #1900ff, 0 0 40px #2d0a9e, 0 0 50px #1b0e71, 0 0 60px #180bca9a, 0 0 70px #133ecb, 0 0 80px #282094;
+    }
+  }
+
+textarea {
+    resize: none;
+}
+.close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 330px;
+    background: #FFFFFF;
+  }
+  
+button {
+    box-shadow: 2px 2px 4px rgba(61, 105, 16, 0.5);
+    font-family: "Times New Roman";
+    color: blue;
+}
+  
+button:hover {
+    background: #0078BF;
+    color: #fff;
+}
+
+button:active {
+    background: #FF0000;
+    color: blue;
+}
+
+.karta {
+    width: 200px;
+    border: 3px solid black;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease; 
+    
+}
+
+.mid {
+    margin-bottom: 2px;
+    margin-top: 2px;
+
+}
+
+.karta:hover {
+    transform: scale(1.05); 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.vk {
+    width: 100px;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bomb {
+    width: 100%;
+    padding: 5%;
+    margin: 5%;
+}
+
+.table1 {
+	width: 40%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table1 th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table1 td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
+.table2 {
+	width: 30%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table2 th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table2 td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+@media (max-width: 768px) {
+    .toptable {
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .button_main {
+      width: 100%;
+    }
+    
+    .modal-content {
+        width: 50%;
+        
+    }
+    
+    .modal{
+        width: 30%;
+    }
+
+    .form {
+        width: 80%;
+    }
+    .rightside {  
+        display: none;      
+    }
+    .photo1 {
+        width: 20%;
+    }
+    
+    .grid-container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+  }
